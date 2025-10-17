@@ -1,0 +1,244 @@
+Auto-Transcript Start Time:  11:03:23, 17 Oct 2025 ora legale Europa occidentale 
+Current Directory: "C:\Users\Cosimo\Desktop\Ugello_2D_Completo"
+
+              Welcome to ANSYS Fluent 2024 R1
+
+              Copyright 1987-2024 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Nov 22 2023 10:34:35 EST  Build Id: 10184  
+ 
+Connected License Server List:	1055@localhost
+Host spawning Node 0 on machine "tuo" (win64).
+
+-------------------------------------------------------------------------------
+ID    Hostname  Core   O.S.         PID    Vendor                          
+-------------------------------------------------------------------------------
+n11   tuo       12/12  Windows-x64  17056  Intel(R) Core(TM) i7-8750H      
+n10   tuo       11/12  Windows-x64  17768  Intel(R) Core(TM) i7-8750H      
+n9    tuo       10/12  Windows-x64  19844  Intel(R) Core(TM) i7-8750H      
+n8    tuo       9/12   Windows-x64  11860  Intel(R) Core(TM) i7-8750H      
+n7    tuo       8/12   Windows-x64  17796  Intel(R) Core(TM) i7-8750H      
+n6    tuo       7/12   Windows-x64  18968  Intel(R) Core(TM) i7-8750H      
+n5    tuo       6/12   Windows-x64  6812   Intel(R) Core(TM) i7-8750H      
+n4    tuo       5/12   Windows-x64  5988   Intel(R) Core(TM) i7-8750H      
+n3    tuo       4/12   Windows-x64  20928  Intel(R) Core(TM) i7-8750H      
+n2    tuo       3/12   Windows-x64  18616  Intel(R) Core(TM) i7-8750H      
+n1    tuo       2/12   Windows-x64  20944  Intel(R) Core(TM) i7-8750H      
+n0*   tuo       1/12   Windows-x64  11608  Intel(R) Core(TM) i7-8750H      
+host  tuo              Windows-x64  3280   Intel(R) Core(TM) i7-8750H      
+
+MPI Option Selected: intel
+Selected system interconnect: default
+-------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\Cosimo\\Desktop\\Ugello_2D_Completo\\cleanup-fluent-tuo-3280.bat
+
+> (cx-gui-do cx-activate-item "MenuBar*Parametric ProjectSubMenu*Open...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "Ugello_Mesh_2.flprj") "Project files (*.flprj *.flprz )")
+(cx-gui-do cx-activate-tab-index "Parametric Study*Table1*Frame1*Table2*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Parametric Study*Table1*Frame1*Table2*Frame1" 1)
+(cx-gui-do cx-activate-tab-index "Parametric Study*Table1*Frame1*Table2*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Parametric Study*Table1*Frame1*Table2*Frame1" 2)
+(cx-gui-do cx-activate-tab-index "Parametric Study*Table1*Frame1*Table2*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Parametric Study*Table1*Frame1*Table2*Frame1" 3)
+(cx-gui-do cx-activate-tab-index "Parametric Study*Table1*Frame1*Table2*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Parametric Study*Table1*Frame1*Table2*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Parametric Study*Table1*Frame1*Table2*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Parametric Study*Table1*Frame1*Table2*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Parametric Study*Table1*Frame1*Table2*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Parametric Study*Table1*Frame1*Table2*Frame1" 0)
+(syncdir "C:/Users/Cosimo/Desktop/Ugello_2D_Completo/Ugello_Mesh_2.cffdb\Ugello_Mesh-Solve\BaseCases")()
+Fast-loading "C:\PROGRA~1\ANSYSI~1\v241\fluent\fluent24.1.0\\addons\afd\lib\hdfio.bin"
+Done.
+
+Reading from tuo:"C:/Users/Cosimo/Desktop/Ugello_2D_Completo/Ugello_Mesh_2.cffdb\Ugello_Mesh-Solve\DP8\Ugello_Mesh.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+Warning: reading 8 partition grid onto 12 compute node machine.
+         will auto partition.
+        6058 cells,     1 cell zone  ...
+           6058 mixed cells,  zone id: 2
+       12394 faces,     5 face zones ...
+          11816 2D interior faces,  zone id: 1
+             34 2D pressure-inlet faces,  zone id: 5
+             22 2D pressure-outlet faces,  zone id: 6
+            260 2D axis faces,  zone id: 7
+            262 2D wall faces,  zone id: 8
+        6337 nodes,     1 node zone  ...
+  Done.
+
+
+Building...
+     mesh
+	auto partitioning mesh by Metis (fast),
+	distributing mesh
+		parts............,
+		faces............,
+		nodes............,
+		cells............,
+        bandwidth reduction using Reverse Cuthill-McKee: 512/24 = 21.3333
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	wall
+	axis
+	outlet
+	interior-ugello_delaval_noambientevalle-freeparts_none
+	inlet
+	ugello_delaval_noambientevalle-freeparts_none
+     parallel,
+Done.
+
+Reading from tuo:"C:/Users/Cosimo/Desktop/Ugello_2D_Completo/Ugello_Mesh_2.cffdb\Ugello_Mesh-Solve\DP8\Ugello_Mesh.dat.h5" in NODE0 mode ...
+
+
+  Reading results.
+Parallel variables...
+Done.
+(syncdir "C:/Users/Cosimo/Desktop/Ugello_2D_Completo/Ugello_Mesh_2.cffdb/Ugello_Mesh-Solve/DP8")()
+
+       Clearing partially read grid.
+
+Reading from tuo:"C:/Users/Cosimo/Desktop/Ugello_2D_Completo/Ugello_Mesh_2.cffdb/Ugello_Mesh-Solve/DP2\Ugello_Mesh.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+Warning: reading 8 partition grid onto 12 compute node machine.
+         will auto partition.
+        6058 cells,     1 cell zone  ...
+           6058 mixed cells,  zone id: 2
+       12394 faces,     5 face zones ...
+          11816 2D interior faces,  zone id: 1
+             34 2D pressure-inlet faces,  zone id: 5
+             22 2D pressure-outlet faces,  zone id: 6
+            260 2D axis faces,  zone id: 7
+            262 2D wall faces,  zone id: 8
+        6337 nodes,     1 node zone  ...
+  Done.
+
+
+Building...
+     mesh
+	auto partitioning mesh by Metis (fast),
+	distributing mesh
+		parts............,
+		faces............,
+		nodes............,
+		cells............,
+        bandwidth reduction using Reverse Cuthill-McKee: 512/24 = 21.3333
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	wall
+	axis
+	outlet
+	interior-ugello_delaval_noambientevalle-freeparts_none
+	inlet
+	ugello_delaval_noambientevalle-freeparts_none
+     parallel,
+Done.
+
+Reading from tuo:"C:/Users/Cosimo/Desktop/Ugello_2D_Completo/Ugello_Mesh_2.cffdb/Ugello_Mesh-Solve/DP2\Ugello_Mesh.dat.h5" in NODE0 mode ...
+
+
+  Reading results.
+Parallel variables...
+Done.
+(cx-gui-do cx-activate-item "Ribbon*Frame1*Frame10(Parametric)*Table1*Table3(Update Options)*PushButton3(Update Current)")
+
+Error: Current Design Point is not in "Needs Update" or "Interrupted" or "Queued In Fluent" state
+Error Object: #f
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Discrete Phase"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Efficiency"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Forces"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Reports|Surface Integrals"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Animations|Playback"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Dashboard|dashboard-1"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Dashboard|dashboard-1"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-activate-item "MenuBar*PopupMenuTree-dashboard-1*Display")
+
+number tracked = 17, escaped = 17
+
+preview-windows-for-embedded-windows[method]: Invalid option.(cx-gui-do cx-activate-item "Ribbon*Frame1*Frame10(Parametric)*Table1*Table3(Simulation Report)*PushButton2(Current Design Point Report)")
+
+Simulation Report generation has been interruptedDone.
+Interrupting client...
+Done.
+Interrupting client...
+Done.
+Done.
+
+> Done.
+
+> (cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|XY Plot|total-temperature-plor"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-activate-item "MenuBar*PopupMenuTree-total-temperature-plor*Edit...")
+(cx-gui-do cx-set-toggle-button2 "Solution XY Plot*Table1*Table1*ButtonBox1(Options)*CheckButton4(Write to File)" #t)
+(cx-gui-do cx-activate-item "Solution XY Plot*Table1*Table1*ButtonBox1(Options)*CheckButton4(Write to File)")
+(cx-gui-do cx-set-toggle-button2 "Solution XY Plot*Table1*Table1*ButtonBox1(Options)*CheckButton4(Write to File)" #f)
+(cx-gui-do cx-activate-item "Solution XY Plot*Table1*Table1*ButtonBox1(Options)*CheckButton4(Write to File)")
+(cx-gui-do cx-activate-item "Solution XY Plot*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|XY Plot|total-temperature-plor""Results|Plots|XY Plot|total-pressure-plot""Results|Plots|XY Plot|mach-plot""Results|Plots|XY Plot|velocity-plot""Results|Plots|XY Plot|static-pressure-plot""Results|Plots|XY Plot|static-temperature-plot"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Results|Plots|XY Plot|total-temperature-plor""Results|Plots|XY Plot|total-pressure-plot""Results|Plots|XY Plot|mach-plot""Results|Plots|XY Plot|velocity-plot""Results|Plots|XY Plot|static-pressure-plot""Results|Plots|XY Plot|static-temperature-plot"))
+(cx-gui-do cx-list-tree-right-click "NavigationPane*Frame2*Table1*List_Tree2" )
+(cx-gui-do cx-activate-item "MenuBar*PopupMenuPopupMenu*Export To File...")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*Frame2*Table1*List_Tree2" (list "Solution|Initialization"))
+
+tuo is already loaded (27.3738).                       Process affinity not being set.
+
+       Clearing partially read grid.
+
+Reading from tuo:"C:/Users/Cosimo/Desktop/Ugello_2D_Completo/Ugello_Mesh_2.cffdb/Ugello_Mesh-Solve/Base DP\Ugello_Mesh.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+Warning: reading 8 partition grid onto 12 compute node machine.
+         will auto partition.
+        6058 cells,     1 cell zone  ...
+           6058 mixed cells,  zone id: 2
+       12394 faces,     5 face zones ...
+          11816 2D interior faces,  zone id: 1
+             34 2D pressure-inlet faces,  zone id: 5
+             22 2D pressure-outlet faces,  zone id: 6
+            260 2D axis faces,  zone id: 7
+            262 2D wall faces,  zone id: 8
+        6337 nodes,     1 node zone  ...
+  Done.
+
+
+Building...
+     mesh
+	auto partitioning mesh by Metis (fast),
+	distributing mesh
+		parts............,
+		faces............,
+		nodes............,
+		cells............,
+        bandwidth reduction using Reverse Cuthill-McKee: 512/24 = 21.3333
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	wall
+	axis
+	outlet
+	interior-ugello_delaval_noambientevalle-freeparts_none
+	inlet
+	ugello_delaval_noambientevalle-freeparts_none
+     parallel,
+Done.
+
+Reading from tuo:"C:/Users/Cosimo/Desktop/Ugello_2D_Completo/Ugello_Mesh_2.cffdb/Ugello_Mesh-Solve/Base DP\Ugello_Mesh.dat.h5" in NODE0 mode ...
+
+
+  Reading results.
+Parallel variables...
+Done.
+/exit y
+(cx-gui-do cx-activate-item "Question*OK")
+Auto-Transcript Stop Time:  12:46:39, 17 Oct 2025 ora legale Europa occidentale 
+Total Transcript Time: 1 Hour 43 Minute 16 Second.
